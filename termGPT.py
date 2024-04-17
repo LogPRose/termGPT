@@ -12,8 +12,6 @@ file_type = input("Which file type would you like work with? (Python, C++, C, .t
 mode_type = input("Would you like one contiguous output log or a new output log for each type?\n 1: Contiguous 2: New ").strip()
 
 
-
-
 if file_type != ".txt":
     prompt += file_type.strip()
 if input == "Python":
