@@ -6,16 +6,19 @@ This JSON response returned will be output to the terminal itself but will also 
 
 For ease of setup, I will leave all of the code available. All you will need to do is set up your own `.env` file with your keys!
 
-* First run the command:
+Run the command:
    > pip install openai
 
 Next, you'll want to head over to OpenAI and sign in to your account, then proceed to the dashboard in order to generate your API key for the next step.
 
 In the template `.env` file, you'll want to set `OPEN_API_KEY` to the key you generated in the last step.
 
-* After your API key has been set up, you can proceed to run the command:
+After your API key has been set up, you can proceed to run the command:
    > python3 termGPT.py
 
+   There are some options of boot up to configure your experience:
+    * Mode - You can use a contiguous file for successive prompts or you can have the logfile be replaced on each prompt
+    * File type - This describes what type of file you would like the logfile to be in for the sake of your LSP
    You can now start typing away! You can safely exit by using `Ctrl+C`.
 
 ## Additional Resources
