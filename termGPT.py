@@ -32,14 +32,14 @@ if (mode_type == 1):
         while 1:
 
             user_input = input("Prompt: ")
-        response = openai.Completion.create(
-                engine="text-davinci-002",
-                prompt=prompt,
-                max_tokens=50
-                )
-        generated_text = response.choices[0].text.strip()
-        print(generated_text)
-        file.write(generated_text)
+            response = openai.Completion.create(
+                    engine="text-davinci-002",
+                    prompt=prompt,
+                    max_tokens=50
+                    )
+            generated_text = response.choices[0].text.strip()
+            print(generated_text)
+            file.write(generated_text)
 
 else:
     while 1:
